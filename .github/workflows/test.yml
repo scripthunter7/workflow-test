@@ -1,0 +1,15 @@
+# Test workflow
+
+name: Test
+
+# Allow run manually
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      # Just echo something
+      - run: echo "Hello world"
